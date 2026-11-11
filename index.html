@@ -1,0 +1,26 @@
+<!doctype html><html lang="my"><head><meta charset="utf-8"><title>Mony</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mony"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#F5B52E"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+:root{--bg:#fffaf0;--c:#fff;--t:#2b2111;--m:#7a6a52;--g:#F5B52E;--l:#eadfc8}
+@media(prefers-color-scheme:dark){:root{--bg:#17130c;--c:#241d12;--t:#f4ead6;--m:#a99b82;--l:#3a2f1e}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font:16px system-ui,'Myanmar Text',sans-serif;padding-top:env(safe-area-inset-top)}
+header{display:flex;gap:8px;padding:14px 16px;position:sticky;top:0;background:var(--bg)}header div{flex:1;background:var(--c);border-radius:14px;padding:10px 12px;border:1px solid var(--l)}
+small{display:block;color:var(--m);font-size:12px}header b{font-size:18px}
+main{padding:0 16px 200px}.r{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid var(--l)}.r span{flex:1;min-width:0;overflow-wrap:anywhere}.r button{background:none;border:0;font-size:18px;padding:6px}
+h3{margin:16px 0 4px;font-size:14px;color:var(--m)}.e{color:var(--m);text-align:center;padding:28px 0}
+button{font:inherit;color:inherit}.btn{display:block;width:100%;margin:8px 0;padding:12px;border-radius:12px;border:1px solid var(--l);background:var(--c)}
+footer{position:fixed;left:0;right:0;bottom:0;background:var(--bg);border-top:1px solid var(--l);padding:8px 12px calc(8px + env(safe-area-inset-bottom))}
+#ch{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px}.chip{white-space:nowrap;border:1px solid var(--l);background:var(--c);border-radius:99px;padding:4px 12px}
+form{display:flex;gap:8px}input[type=text]{flex:1;min-width:0;font:inherit;font-size:17px;padding:12px;border-radius:12px;border:1px solid var(--l);background:var(--c);color:var(--t)}
+form button{background:var(--g);border:0;border-radius:12px;padding:0 18px;font-size:22px;color:#3b2a1a}
+nav{display:flex;margin-top:6px}nav button{flex:1;background:none;border:0;padding:8px 0;color:var(--m)}nav .on{color:var(--t);font-weight:600;border-bottom:2px solid var(--g)}
+#t{position:fixed;left:16px;right:16px;bottom:160px;background:#2b2111;color:#fff;border-radius:12px;padding:10px 14px;display:none;justify-content:space-between}#t button{background:none;border:0;color:var(--g)}
+</style></head><body>
+<header id="sum"></header><main id="v"></main>
+<footer><div id="ch"></div><form id="f"><input id="i" type="text" placeholder="ထမင်း 3000" autocomplete="off" autocapitalize="none" enterkeyhint="done"><button aria-label="add">＋</button></form>
+<nav id="n"><button data-tab="t">ယနေ့</button><button data-tab="m">လစဉ်</button><button data-tab="h">မှတ်တမ်း</button><button data-tab="s">⚙️</button></nav></footer>
+<div id="t"></div><input id="file" type="file" accept="application/json" hidden>
+<script src="app.js"></script></body></html>
